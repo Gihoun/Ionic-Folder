@@ -8,8 +8,10 @@ import { Usuario } from 'src/app/services/users.model';
   templateUrl: './detalle-docente.page.html',
   styleUrls: ['./detalle-docente.page.scss'],
 })
+
 export class DetalleDocentePage implements OnInit {
   Title ="Perfil Docente"
+  icono = "trash"
   usuario: Usuario;
   constructor(private actRoute: ActivatedRoute, private uService: UsersService) { }
 

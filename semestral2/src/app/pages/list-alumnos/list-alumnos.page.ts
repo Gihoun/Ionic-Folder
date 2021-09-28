@@ -15,7 +15,7 @@ export class ListAlumnosPage implements OnInit {
   constructor(private uService: UsersService, private navCtrl:NavController) { }
 
   ngOnInit() {
-    this.listAlumnos = this.uService.getUsers()
+    this.listAlumnos = this.uService.getUsers()  
   }
   ionViewWillEnter() {
     this.listAlumnos = this.uService.getUsers()

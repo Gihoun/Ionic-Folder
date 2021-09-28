@@ -16,7 +16,7 @@ export class EstudianteAddPage implements OnInit {
   ngOnInit() {
   }
   addEstudiante(id,username,name,mail,rol,pass){
-    this.uService.addEstudiantes(id.value,username.value,name.value,mail.value,rol.value,pass.value);
+    this.uService.addEstudiantes(Number(id.value),username.value,name.value,mail.value,rol.value,pass.value);
     this.router.navigate(['/list-alumnos']);
   }
 }

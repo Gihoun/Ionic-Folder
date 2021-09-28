@@ -11,6 +11,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class DetalleAlumnoPage implements OnInit {
   Title ="Perfil Alumno"
+  icono= "add"
   usuario: Usuario;
   constructor(private actRoute: ActivatedRoute, private uService: UsersService, private router: Router,private alertController: AlertController) { }
 

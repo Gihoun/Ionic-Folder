@@ -36,7 +36,7 @@ export class UsersService {
   getUsers() {
     return [
       ...this.usuarios.filter((rol) => {
-        return rol.userRol === 'Alumno';
+        return rol.userRol === 'Estudiante';
       }),
     ];
   }
