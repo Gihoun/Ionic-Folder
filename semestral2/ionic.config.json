@@ -1,0 +1,7 @@
+{
+  "name": "semestral2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

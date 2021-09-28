@@ -1,0 +1,16 @@
+<app-standar-header [pageTitle]="Title"></app-standar-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-input type="number" placeholder="Ingrese id" #id></ion-input>
+      <ion-input type="text" placeholder="Ingrese Usuario" #username></ion-input>
+      <ion-input type="text" placeholder="Ingrese Nombre y Apellido" #name></ion-input>
+      <ion-input type="text" placeholder="Ingrese Email" #mail></ion-input>
+      <ion-input type="text" hidden value="Alumno" #rol></ion-input>
+      <ion-input type="password" placeholder="Ingrese Contraseña" #pass></ion-input>
+      <ion-button (click)="addEstudiante(id,username,name,mail,rol,pass)">Guardar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<app-standar-footer></app-standar-footer>

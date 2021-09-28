@@ -1,0 +1,27 @@
+<app-home-header></app-home-header>
+<ion-content [fullscreen]="true" class="duoc-imagen">
+  <div id="container">
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-title>Bienvenid@s</ion-card-title>
+        <ion-card-subtitle>Selecciona Tu ROL:
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content class="ion-text-center">
+        <ion-button class="back-buttonAlumno ion-margin-bottom" shape="round" strong="true" fill="solid" expand="block"
+          slot="start" (click)="openModal()">
+          {{Student}}
+        </ion-button>
+        <ion-button shape="round" strong="true" fill="solid" class="back-buttonDocente" expand="block" slot="end" (click)="openModal2()">
+          {{Teacher}}
+        </ion-button>
+        <div class="ion-margin-top" >
+          <strong >Necesitas Registrarte?</strong>
+          <p>Pincha el siguiente Link<a target="_blank" rel="noopener noreferrer" href="#">
+              Registro</a></p>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+<app-standar-footer></app-standar-footer>

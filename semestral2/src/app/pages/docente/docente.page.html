@@ -1,0 +1,40 @@
+<app-profile-header></app-profile-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido</ion-card-title>
+      <ion-card-subtitle>{{usuario.name}}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://cdn.onlinewebfonts.com/svg/img_377300.png" alt="" />
+          </ion-avatar>
+          <ion-label>Crear QR</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://image.pngaaa.com/442/3076442-middle.png" alt="" />
+          </ion-avatar>
+          <ion-label>Cosas de profes</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/docente',usuario.userId]">
+          <ion-avatar slot="start">
+            <img src="https://image.pngaaa.com/730/4806730-middle.png" alt="" />
+          </ion-avatar>
+          <ion-label>Mi Perfil</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/list-alumnos']">
+          <ion-avatar slot="start">
+            <img src="https://image.pngaaa.com/443/4437443-middle.png" alt="" />
+          </ion-avatar>
+          <ion-label>Lista de Alumnos</ion-label>
+        </ion-item>       
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<app-standar-footer></app-standar-footer>
